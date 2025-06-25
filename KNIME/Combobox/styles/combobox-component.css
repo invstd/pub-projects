@@ -145,7 +145,7 @@
 .combobox-list .divider {
     height: 1px;
     background: #E0E0E0;
-    margin: 4px 0;
+    /* margin: 4px 0; */
     border: none;
     width: 100%;
 }
@@ -165,18 +165,7 @@
     height: 12px;
 }
 .combobox-list .clear-all {
-    /* color: #a80826;
-    font-family: 'Roboto', Arial, sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-    display: flex;
-    align-items: center;
-    border-radius: 5px;
-    margin: 0;
-    padding: 6px 8px;
-    cursor: pointer;
-    user-select: none;
-    transition: background 0.15s; */
+    background-color: #FAFAFA;
 }
 .combobox-list .clear-all:hover, .combobox-list .clear-all:focus {
     background: #fbeaec;
@@ -191,9 +180,9 @@
 }
 .clear-all {
     position: sticky;
-    bottom: 0;
+    bottom: -4px;
     z-index: 10;
-    background: #FAFAFA;
+    background: transparent;
 }
 .combobox-center-container {
     display: flex;
