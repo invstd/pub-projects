@@ -1,4 +1,3 @@
-# pub-projects
-Showroom of projects with public access through Github Pages.
+# KNIME Combobox Components
 
 - [Open the Combobox Component Demo](KNIME/Combobox/combobox-component.html) 
