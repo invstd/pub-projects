@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combobox Component</title>
+    <link rel="stylesheet" href="styles/combobox-component.css">
+</head>
+<body>
+    <div style="width:100vw;text-align:center;margin-top:80px;margin-bottom:32px;">
+        <h1 style="font-family:'Roboto',Arial,sans-serif;font-size:32px;font-weight:700;color:#282828;margin:0;">KDS Combobox</h1>
+    </div>
+    <div class="combobox-center-container" style="flex-direction: row; gap: 64px;">
+        <div>
+            <h2 style="text-align:center; margin-bottom: 24px; font-family: 'Roboto', Arial, sans-serif; font-size: 20px; font-weight: 500; color: #282828;">Variant A</h2>
+            <div class="combobox">
+                <div class="combobox-container">
+                    <input type="text" id="combobox-input" placeholder="Add ..." autocomplete="off">
+                    <span class="combobox-chevron" tabindex="-1">
+                        <img src="icons/chevron-down.svg" alt="Chevron Down" width="12" height="12" />
+                    </span>
+                </div>
+                <div class="combobox-list" id="combobox-list">
+                    <div><div class="item-wrapper">Toyota Corolla <span class="checkmark" style="display:none"><img src="icons/checkmark.svg" alt="Selected" width="12" height="12"></span></div></div>
+                    <div><div class="item-wrapper">Honda Civic <span class="checkmark" style="display:none"><img src="icons/checkmark.svg" alt="Selected" width="12" height="12"></span></div></div>
+                    <div><div class="item-wrapper">Ford Mustang <span class="checkmark" style="display:none"><img src="icons/checkmark.svg" alt="Selected" width="12" height="12"></span></div></div>
+                    <div><div class="item-wrapper">Chevrolet Camaro <span class="checkmark" style="display:none"><img src="icons/checkmark.svg" alt="Selected" width="12" height="12"></span></div></div>
+                    <div><div class="item-wrapper">BMW 3 Series <span class="checkmark" style="display:none"><img src="icons/checkmark.svg" alt="Selected" width="12" height="12"></span></div></div>
+                    <div><div class="item-wrapper">Audi A4 <span class="checkmark" style="display:none"><img src="icons/checkmark.svg" alt="Selected" width="12" height="12"></span></div></div>
+                    <div><div class="item-wrapper">Mercedes-Benz C-Class <span class="checkmark" style="display:none"><img src="icons/checkmark.svg" alt="Selected" width="12" height="12"></span></div></div>
+                    <div><div class="item-wrapper">Volkswagen Golf <span class="checkmark" style="display:none"><img src="icons/checkmark.svg" alt="Selected" width="12" height="12"></span></div></div>
+                    <div><div class="item-wrapper">Subaru Impreza <span class="checkmark" style="display:none"><img src="icons/checkmark.svg" alt="Selected" width="12" height="12"></span></div></div>
+                    <div><div class="item-wrapper">Mazda CX-5 <span class="checkmark" style="display:none"><img src="icons/checkmark.svg" alt="Selected" width="12" height="12"></span></div></div>
+                    <div><div class="item-wrapper">Tesla Model 3 <span class="checkmark" style="display:none"><img src="icons/checkmark.svg" alt="Selected" width="12" height="12"></span></div></div>
+                    <div><div class="item-wrapper">Hyundai Elantra <span class="checkmark" style="display:none"><img src="icons/checkmark.svg" alt="Selected" width="12" height="12"></span></div></div>
+                    <div class="clear-all"><div class="item-wrapper"><span style="display:inline-block;width:12px;height:12px;margin-right:4px;vertical-align:middle;"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.3514 2.76203L9 10.25H6H3L2.6487 2.76203M2 2.76203H10M4.66665 2.76199V1.25H7.33332V2.76199" stroke="#a80826" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Clear all</span></div></div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h2 style="text-align:center; margin-bottom: 24px; font-family: 'Roboto', Arial, sans-serif; font-size: 20px; font-weight: 500; color: #282828;">Variant B</h2>
+            <div class="combobox" id="combobox-b">
+                <div class="combobox-container">
+                    <div id="combobox-input-b" class="combobox-display" tabindex="0">
+                        <div class="chip-list" id="chip-list-b"></div>
+                        <span class="chip-placeholder" id="chip-placeholder-b">Add ...</span>
+                    </div>
+                    <span class="combobox-chevron" tabindex="-1">
+                        <img src="icons/chevron-down.svg" alt="Chevron Down" width="12" height="12" />
+                    </span>
+                </div>
+                <div class="combobox-list" id="combobox-list-b">
+                    <div><div class="item-wrapper">Toyota Corolla <span class="checkmark" style="display:none"><img src="icons/checkmark.svg" alt="Selected" width="12" height="12"></span></div></div>
+                    <div><div class="item-wrapper">Honda Civic <span class="checkmark" style="display:none"><img src="icons/checkmark.svg" alt="Selected" width="12" height="12"></span></div></div>
+                    <div><div class="item-wrapper">Ford Mustang <span class="checkmark" style="display:none"><img src="icons/checkmark.svg" alt="Selected" width="12" height="12"></span></div></div>
+                    <div><div class="item-wrapper">Chevrolet Camaro <span class="checkmark" style="display:none"><img src="icons/checkmark.svg" alt="Selected" width="12" height="12"></span></div></div>
+                    <div><div class="item-wrapper">BMW 3 Series <span class="checkmark" style="display:none"><img src="icons/checkmark.svg" alt="Selected" width="12" height="12"></span></div></div>
+                    <div><div class="item-wrapper">Audi A4 <span class="checkmark" style="display:none"><img src="icons/checkmark.svg" alt="Selected" width="12" height="12"></span></div></div>
+                    <div><div class="item-wrapper">Mercedes-Benz C-Class <span class="checkmark" style="display:none"><img src="icons/checkmark.svg" alt="Selected" width="12" height="12"></span></div></div>
+                    <div><div class="item-wrapper">Volkswagen Golf <span class="checkmark" style="display:none"><img src="icons/checkmark.svg" alt="Selected" width="12" height="12"></span></div></div>
+                    <div><div class="item-wrapper">Subaru Impreza <span class="checkmark" style="display:none"><img src="icons/checkmark.svg" alt="Selected" width="12" height="12"></span></div></div>
+                    <div><div class="item-wrapper">Mazda CX-5 <span class="checkmark" style="display:none"><img src="icons/checkmark.svg" alt="Selected" width="12" height="12"></span></div></div>
+                    <div><div class="item-wrapper">Tesla Model 3 <span class="checkmark" style="display:none"><img src="icons/checkmark.svg" alt="Selected" width="12" height="12"></span></div></div>
+                    <div><div class="item-wrapper">Hyundai Elantra <span class="checkmark" style="display:none"><img src="icons/checkmark.svg" alt="Selected" width="12" height="12"></span></div></div>
+                    <div class="clear-all"><div class="item-wrapper"><span style="display:inline-block;width:12px;height:12px;margin-right:4px;vertical-align:middle;"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.3514 2.76203L9 10.25H6H3L2.6487 2.76203M2 2.76203H10M4.66665 2.76199V1.25H7.33332V2.76199" stroke="#a80826" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Clear all</span></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/combobox-component.js"></script>
+</body>
+</html> 
