@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComboBox Component</title>
+    <link rel="stylesheet" href="styles/combobox-component.css">
+</head>
+<body>
+    <div style="width:100vw;text-align:center;margin-top:80px;margin-bottom:32px;">
+        <h1 style="font-family:'Roboto',Arial,sans-serif;font-size:32px;font-weight:700;color:#282828;margin:0;">KDS ComboBox</h1>
+    </div>
+    <div class="combobox-center-container">
+        <div class="combobox">
+            <div class="combobox-container">
+                <div class="chip-list"></div>
+                <button type="button" class="chip-counter-btn" style="display:none" tabindex="0" aria-label="Show all selected"></button>
+                <span class="chip-placeholder">Add ...</span>
+                <input type="text" id="combobox-input" placeholder="Add ..." autocomplete="off" readonly>
+                <span class="combobox-chevron" tabindex="-1">
+                    <img src="icons/chevron-down.svg" alt="Chevron Down" width="12" height="12" />
+                </span>
+            </div>
+            <div class="chip-list-expanded" style="display:none;"></div>
+            <div class="combobox-list" id="combobox-list">
+                <div class="filter-container">
+                    <div class="filter-input-wrapper">
+                        <img src="icons/search.svg" alt="Search" class="filter-icon" width="16" height="16">
+                        <input type="text" class="filter-input" placeholder="Search" autocomplete="off">
+                        <button type="button" class="filter-add-btn" style="display:none" tabindex="0" aria-label="Add new item">
+                            <img src="icons/checkmark.svg" alt="Add" width="14" height="14">
+                        </button>
+                        <button type="button" class="filter-clear-btn" style="display:none" tabindex="0" aria-label="Clear filter">
+                            <img src="icons/x-close.svg" alt="Clear" width="14" height="14">
+                        </button>
+                    </div>
+                </div>
+                <div><div class="item-wrapper">Toyota Corolla <span class="checkmark" style="display:none"><img src="icons/checkmark.svg" alt="Selected" width="12" height="12"></span></div></div>
+                <div><div class="item-wrapper">Honda Civic <span class="checkmark" style="display:none"><img src="icons/checkmark.svg" alt="Selected" width="12" height="12"></span></div></div>
+                <div><div class="item-wrapper">Ford Mustang <span class="checkmark" style="display:none"><img src="icons/checkmark.svg" alt="Selected" width="12" height="12"></span></div></div>
+                <div><div class="item-wrapper">Chevrolet Camaro <span class="checkmark" style="display:none"><img src="icons/checkmark.svg" alt="Selected" width="12" height="12"></span></div></div>
+                <div><div class="item-wrapper">BMW 3 Series <span class="checkmark" style="display:none"><img src="icons/checkmark.svg" alt="Selected" width="12" height="12"></span></div></div>
+                <div><div class="item-wrapper">Audi A4 <span class="checkmark" style="display:none"><img src="icons/checkmark.svg" alt="Selected" width="12" height="12"></span></div></div>
+                <div><div class="item-wrapper">Mercedes-Benz C-Class <span class="checkmark" style="display:none"><img src="icons/checkmark.svg" alt="Selected" width="12" height="12"></span></div></div>
+                <div><div class="item-wrapper">Volkswagen Golf <span class="checkmark" style="display:none"><img src="icons/checkmark.svg" alt="Selected" width="12" height="12"></span></div></div>
+                <div><div class="item-wrapper">Subaru Impreza <span class="checkmark" style="display:none"><img src="icons/checkmark.svg" alt="Selected" width="12" height="12"></span></div></div>
+                <div><div class="item-wrapper">Mazda CX-5 <span class="checkmark" style="display:none"><img src="icons/checkmark.svg" alt="Selected" width="12" height="12"></span></div></div>
+                <div><div class="item-wrapper">Tesla Model 3 <span class="checkmark" style="display:none"><img src="icons/checkmark.svg" alt="Selected" width="12" height="12"></span></div></div>
+                <div><div class="item-wrapper">Hyundai Elantra <span class="checkmark" style="display:none"><img src="icons/checkmark.svg" alt="Selected" width="12" height="12"></span></div></div>
+                <div class="clear-all"><div class="item-wrapper"><span style="display:inline-block;width:12px;height:12px;margin-right:4px;vertical-align:middle;"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.3514 2.76203L9 10.25H6H3L2.6487 2.76203M2 2.76203H10M4.66665 2.76199V1.25H7.33332V2.76199" stroke="#a80826" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Clear all</span></div></div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/combobox-component.js"></script>
+</body>
+</html> 
