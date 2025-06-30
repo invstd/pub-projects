@@ -440,4 +440,7 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     vertical-align: middle;
+}
+.clear-all .item-wrapper span {
+    color: #a80826;
 } 
