@@ -88,6 +88,18 @@ document.querySelectorAll('.multiselect').forEach((multiselect, idx) => {
         setTimeout(() => {
             if (filterInput) {
                 filterInput.focus();
+                // Update clear and add button visibility
+                if (filterInput.value.trim()) {
+                    if (clearBtn) clearBtn.style.display = '';
+                    if (addBtn && shouldShowAddBtn(filterInput.value)) {
+                        addBtn.style.display = '';
+                    } else if (addBtn) {
+                        addBtn.style.display = 'none';
+                    }
+                } else {
+                    if (clearBtn) clearBtn.style.display = 'none';
+                    if (addBtn) addBtn.style.display = 'none';
+                }
             }
         }, 50);
     }
@@ -138,7 +150,7 @@ document.querySelectorAll('.multiselect').forEach((multiselect, idx) => {
     if (filterInput && addBtn && clearBtn) {
         filterInput.addEventListener('input', (e) => {
             filterItems(e.target.value);
-            if (shouldShowAddBtn(e.target.value)) {
+            if (e.target.value.trim() && shouldShowAddBtn(e.target.value)) {
                 addBtn.style.display = '';
             } else {
                 addBtn.style.display = 'none';
