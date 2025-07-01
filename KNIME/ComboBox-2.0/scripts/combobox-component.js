@@ -473,8 +473,16 @@ document.querySelectorAll('.combobox').forEach((combobox, idx) => {
                 const checkmark = option.querySelector('.checkmark');
                 if (checkmark) checkmark.style.display = 'none';
             });
-            input.value = '';
-            clearAll.style.display = 'none';
+            updateInputValue(); // <-- update chips, input, and clearAll visibility
+            // Collapse expanded chip list if open
+            if (chipListExpanded && chipListExpanded.style.display === 'flex') {
+                chipListExpanded.style.display = 'none';
+            }
+            // Reset chip counter button
+            if (chipCounterBtn) {
+                chipCounterBtn.style.display = 'none';
+                chipCounterBtn.textContent = '';
+            }
             if (filterInput) {
                 filterInput.value = '';
                 filterItems('');
