@@ -293,10 +293,9 @@
     cursor: pointer;
     user-select: none;
     transition: background 0.15s;
-    background: #fafafa;
 }
 .clear-all .item-wrapper:hover, .clear-all .item-wrapper:focus {
-    background: #fbeaec;
+    background: #fff0ef !important;
 }
 .clear-all .item-wrapper span {
     color: #a80826;
@@ -305,7 +304,7 @@
     background-color: #FAFAFA;
 }
 .multiselect-list .clear-all:hover, .multiselect-list .clear-all:focus {
-    background: #fbeaec;
+    background: #fff0ef;
 }
 .multiselect-list .clear-all img {
     width: 12px;

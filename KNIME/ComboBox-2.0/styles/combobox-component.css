@@ -307,13 +307,13 @@
     background: #fafafa;
 }
 .clear-all .item-wrapper:hover, .clear-all .item-wrapper:focus {
-    background: #fbeaec;
+    background: #fff0ef !important;
 }
 .combobox-list .clear-all {
     background-color: #FAFAFA;
 }
 .combobox-list .clear-all:hover, .combobox-list .clear-all:focus {
-    background: #fbeaec;
+    background: #fff0ef;
 }
 .combobox-list .clear-all img {
     width: 12px;
