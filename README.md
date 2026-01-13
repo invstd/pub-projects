@@ -1,5 +1,3 @@
-# KNIME Combobox Components
-
 # Public Projects
 
 This repository is a collection of public projects and demos, accessible via GitHub Pages.
